@@ -8,6 +8,10 @@ body{
   transition: 2s;
 }
 
+.fts{
+    display: none;
+}
+
 header{
     text-align: center;
     color: white;
@@ -137,6 +141,7 @@ div{
     transition: 2s;
     font-weight: bold;
     color: #525453;
+    padding: 5px;
 }
 
 #SimNao{
@@ -297,7 +302,7 @@ footer{
 
     .card{
         width: 100%;
-        height: 420px;
+        height: 400px;
         position: absolute;
         bottom: 41px;
     }
@@ -311,8 +316,6 @@ footer{
     }
 
    #content{
-        /* width: 180px; */
-        /* width: 80%; */
         height: 100px;
         background: #edeef0;
        
@@ -331,7 +334,6 @@ footer{
         /* right: 0px; */
         left: 55%;
         bottom: 30px;
-        /* background:red; */
         width: 150px;
         height: 130px;
         align-items: center;
@@ -347,16 +349,13 @@ footer{
        margin-left: 2px;
    }
 
-    
     #Btn{
-        /* max-width: 150px; */
         width: 90%;
         height: 25px;
         font-size: 15px;  
     }
 
     #Btn2{
-        /* max-width: 150px; */
         width: 90%;
         height: 25px;
         font-size: 15px;
@@ -364,6 +363,6 @@ footer{
     }
 
     #guia{
-        margin: 5px;
+        margin: 10px;
     }
 }
