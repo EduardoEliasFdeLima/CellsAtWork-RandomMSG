@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,46 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="https://i.imgur.com/YnkwyNL.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Cells at work!</title>
 </head>
 <body>
-    <header><h1>Faça ela ler uma mensagem e dê seu feedback</h1></header>
-    <div class="row">
-        <div class="card">
-            <img  id="boun" src="https://i.imgur.com/0KbnSE7.png" title="Plaqueta do anime de Hataraku Saibou" onclick="Msg3()" ondblclick="Msg3()">
-            <div id="content">lorem</div>
-            <div id="SimNao">
-                <p id="some">Você gostou da mensagem?</p>
-                <input type="button" name="Btn" id="Btn" value="Sim!" onclick="Msg4()">
-                <input type="button" name="Btn2" id="Btn2" value="Não!" onclick="Msg2()">
+        <h1 id="texto">Clique no botão de mensagem</h1>
+        <div class="card" id="cd">
+            <div class="cont">
+                <img  id="boun" src="https://i.imgur.com/0KbnSE7.png" title="Plaqueta do anime de Hataraku Saibou" onclick="Msg3()" ondblclick="Msg3()">
+                <div id="content">lorem</div>
+                <div id="SimNao">
+                    <p id="some">Você gostou da mensagem?</p>
+                    <input type="button" name="Btn" id="Btn" value="Sim!" onclick="Msg4()">
+                    <input type="button" name="Btn2" id="Btn2" value="Não!" onclick="Msg2()">
+                </div>
+                <div name="Btn3" id="Btn3" onclick="Msg()"><i class="fa-regular fa-envelope" id="env"></i></div>
             </div>
-
+            
         </div>    
-    </div>
+    
+            <i class="st fa-regular fa-star" id="star1"></i>
+            <i class="st fa-regular fa-star" id="star2"></i>
+            <i class="st fa-regular fa-circle-check" id="star3"></i>
 
-    <div class="row">
-         <div name="Btn3" id="Btn3" onclick="Msg()">Clique aqui para uma Mensagem aparecer</div>
-    </div>
-
+            <i class="st fa-solid fa-xmark" id="erro1"></i>
+            <i class="st fa-regular fa-face-sad-cry" id="erro2"></i>
+            <i class="st fa-solid fa-bomb" id="erro3"></i>
+    
     <div class="help" onclick="Ajuda()">
         <i class="fas fa-question"></i>
     </div>
 
-
-
    <div class="row2">
     <div id="guia">
         <h4>Guia do programa:</h4>
-        <ul>
-            <li>Se você clicar 1 vez na garota, ela fica brava, para acalmá-la basta clicar no botão de mensagem novamente.</li>
-            <li>Ela vai ficar feliz ou triste dependendo da sua reação após ler a mensagem, mas não se preocupe ela vai esquecer logo logo se você deixá-la brava ou pedir outra mensagem.</li>
-            <li>São apenas 10 frases e a geração delas são de forma aleatória, por isso podem acabar repetindo.</li>
+        <ul class="listaguia">
+            <li>Ela vai ficar feliz ou triste dependendo da sua reação após ler a mensagem, mas não se preocupe ela vai esquecer se você deixá-la brava ou pedir outra mensagem.</li>
+            <li>Se você clicar uma vez na garota, ela fica brava, para acalmá-la basta clicar no botão de mensagem novamente.</li>
+            <li>São poucas frases e a geração delas são de forma aleatória, por isso elas podem acabar se repetindo.</li>
         </ul>
         <div id="close" onclick="fechar()"><i class="fas fa-times"></i></div>
     </div>
    </div>
-    
+
     <div class="fts">
         <img src="https://i.imgur.com/32khiLD.png" alt="">
         <img src="https://i.imgur.com/0KbnSE7.png" alt="">
@@ -55,6 +60,6 @@
     </div>
     
     <script src="script.js"></script>
-    
+   
 </body>
 </html>
