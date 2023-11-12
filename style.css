@@ -4,7 +4,9 @@
 }
 
 body{
+  margin: 0;
   background:#bb974d;
+  background: #ECCB79;
   transition: 2s;
 }
 
@@ -13,10 +15,15 @@ body{
 }
 
 header{
+  
+}
+
+h1{
     text-align: center;
     color: white;
-    font-size: 18px;
-    padding: 20px;
+    font-size: 30px;
+    margin-top: 70px;
+    text-transform: uppercase;
 }
 
 .row{
@@ -32,40 +39,46 @@ div{
 
 
 .card{  
-    position: relative;
-    /* padding: 150px; */
-    width: 500px;
-    /* height: 100px; */
-    height: 300px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 700px;
+    height: 500px;
     background-color: #bcdde6;
-    border-radius: 20px 20px 0px 0px;
-    box-shadow: 3px 3px 10px black;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.card img{
+.cont img{
     position: absolute;
     bottom: 0;
-    width: 50%;
-    left: 2px;
-    /* drop-shadow: 2px 2px 10px black; */
+    width: 230px;
+    left: -20px;
+    z-index: 100;
     filter: drop-shadow(2px 2px 5px black);
     
 }
 
 .card img:hover{
-    width: 51%;
+    width: 235px;
     transition: all ease-in-out 0.5s;
     cursor: pointer;
-    left: 4px;
 }
-    
+
+.cont{
+    position: relative;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card p{
-    /*position: absolute;
-    right: 80px;
-    bottom: 90px;*/
-    text-align:left;
+    text-align: left;
     font-size: 15px;
     margin-top: 20px;
     font-weight: bold;
@@ -74,94 +87,138 @@ div{
 
 
 #Btn{
-   
-    background:#bb974d;
+    background: none;
     color: white;
+    color: gray;
+    color: #525453;
+    border: 2px solid gray;
     cursor: pointer;
-    border: none;
     width: 100px;
     height: 30px;
     font-size: 20px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+    border-radius: 2px;
     outline-style: none;
 }
 
 #Btn2{
-    
-    background:#bb974d;
+    background: none;
+    border: 2px solid gray;
     color: white;
+    color: gray;
+    color: #525453;
     cursor: pointer;
-    border: none;
     width: 100px;
     height: 30px;
     font-size: 20px;
-    border-radius: 5px;
-    letter-spacing: 1px;
+    border-radius: 2px;
     outline-style: none;
 }
 
+#Btn2:hover, #Btn:hover{
+    transition: .5s;
+    background: #525453;
+    color: white;
+}
+
 #Btn3{
-    position: relative;
-    margin-top: 1px;
-    width: 500px;
-    padding: 6px;
-    /* height: 30px; */
-    background-color: #bcdde6;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 3px 3px 10px black;
+    margin-top: 70%;
+    margin-left: 70%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #525453;
+    border-radius: 5px;
     color: #525453;
     cursor: pointer;
     letter-spacing: 0.5px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    border: none;
-    outline-style: none; /*Tira a borda externa padrão do button*/
-    text-align: center;
+    outline-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 
+#Btn3:hover{
+    transition: .5s;
+    background: #525453;
+    color: white;
+}
+
+.set{
+    position: absolute;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 45%;
+    margin-left: 55%;
+    transform: rotate(-24deg);
+    opacity: 50%;
+    animation: blink .8s infinite;
+}
+
+
+@keyframes blink{
+  
+  100%{
+    margin-top: 47%;
+    opacity: 20%;
+  }
+
+
+}
+
+
+#envv, #Btn3{
+    animation: balan 1s infinite ease-in 3s;
+}
+
+@keyframes balan{
+    50%{
+        transform: translateY(4px) rotate(2deg);
+    }
+
+    100%{
+        transform: rotate(-2deg);
+    }
+}
 
 #content{
-    width: 220px;
-    height: 100px;
-    background-color: #edeef0;
-    border-radius: 10px;
+    width: 422px;
+    height: 190px;
+    margin: auto;
+    border-radius: 5px;
     justify-content: center;
-    text-align: center;
-    align-items: center;
+    text-align: left;
     display: flex;
     overflow: hidden;
     position: fixed;
     bottom: -200px;
-    right: 30px;
+    /* right: 30px; */
     transition: 2s;
     font-weight: bold;
     color: #525453;
-    padding: 5px;
+    font-size: 20px;
+    padding: 30px;
+    border: 2px solid gray;
 }
 
 #SimNao{
     visibility: hidden;
     transition: 5s;
-   
+    margin-top: 20%;
     position: absolute;
-    right: 20px;
-    bottom: 10px;
-    /* background:red; */
-    width: 220px;
+    right: 0px;
+    font-size: 18px;
+    width: 270px;
     height: 130px;
-    align-items: center;
-    
+    align-items: center;  
     border-radius: 10px;
-    overflow: hidden;
-    /* transition: 5s; */
-  
-    padding: 5px;
+    padding: 20px;
 
+}
+
+#some{
+    font-size: 18px;
 }
 
 body ::selection{
@@ -184,12 +241,11 @@ body ::selection{
     background-color: #bcdde6;
     border-radius: 10px;
     cursor: pointer;
+    transition: 1s;
 }
 
 .help i:hover{
     transition: all 0.5s;
-
-    /* font-size: 45px; */
     transform: scale(1.1,1.1);
 }
 
@@ -199,13 +255,10 @@ body ::selection{
     background-color: #bcdde6;
     border-radius: 20px 20px 20px 20px;
     position: fixed;
-   /* right: -510px;*/
-    /* top: -497px; */
     top: -550px;
     visibility: hidden;
-   
-    transition: ease-out 2s;
-    box-shadow: 3px 3px 10px black;
+    transition: ease-out 1s;
+    box-shadow: 2px 2px 5px black;
     cursor: text;
 }
 
@@ -217,16 +270,25 @@ body ::selection{
     flex-wrap: wrap;
 }
 
+#guia ul{
+    margin-top: -30px;
+}
+
 #guia ul li{
     padding: 10px;
     text-align: justify;
     font-size: 18px;
     margin-right: 30px;
     color: #525453;
-    margin-top: -10px;
+    margin-top: 0px;
     align-items: center;
     justify-content: center;
     
+}
+
+#guia ul li:nth-child(3){
+    margin-top: 15px;
+    margin-left: 35%;
 }
 
 #guia h4{
@@ -235,6 +297,16 @@ body ::selection{
     text-align: center;
 
 }
+
+#guia:nth-child(3){
+    color: red;
+}
+
+.listaguia:nth-child(3){
+    margin-top: 30px;
+    color:red;
+}
+
 
 #close{
     position: absolute;
@@ -262,7 +334,6 @@ footer{
     align-items: center;
     display: flex;
     color: white;
-
 }
 
 
@@ -275,7 +346,80 @@ footer{
     }
 }
 
+#star1, #star2, #star3, #erro1, #erro2, #erro3{
+    position: fixed;
+    font-size: 50px;
+    color: #525453;
+    z-index: 299;
+    bottom: -20%;
+    transition: 5s;
+}
+
+#star1, #erro1{
+    left: 50%;
+    transform: translateX(-50%) rotate(-210deg);
+}
+
+@keyframes fisrtStar {
+    30%{
+        bottom: 35%;
+    }
+
+    50%{
+        bottom: 30%;
+    }
+
+}
+
+#star2, #erro2{
+    left: 30%;
+    transform: translateX(-50%) rotate(-50deg);
+}
+
+
+@keyframes SecondStar {
+    30%{
+        bottom: 45%;
+    }
+
+    50%{
+        bottom: 40%;
+    }
+}
+
+#star3, #erro3{
+    left: 70%;
+    transform: translateX(-50%) rotate(20deg);
+}
+
+
+
+@keyframes ThirdStar {
+    30%{
+        bottom: 55%;
+    }
+
+    50%{
+        bottom: 50%;
+    }
+}
+
+
 @media screen and (max-width: 680px){
+
+        
+    #guia ul li:nth-child(3){
+        margin-top: 0 px;
+        margin-left: 0%;
+    }
+
+        
+    .cont img{
+        z-index: 0;
+    }
+
+
+
 
     header{
         font-size: 15px;
@@ -286,10 +430,6 @@ footer{
         font-size: 25px;
     }
 
-    #Btn3{
-        font-size: 100%;
-
-    }
 }
 
 
@@ -300,69 +440,138 @@ footer{
         font-size: 12px;
     }
 
+    h1{
+        margin-top: 70px;
+
+    }
+
     .card{
         width: 100%;
-        height: 400px;
+        height: 500px; 
         position: absolute;
-        bottom: 41px;
     }
 
     #Btn3{
         position: absolute;
-        width: 100%;
-        height: 40px;
-        bottom: 0;
-        border-radius: 0;
+        bottom: 10px;
     }
 
    #content{
-        height: 100px;
-        background: #edeef0;
-       
+        width: 90%;
+        height: 150px;
+    
         position: fixed;
-        /* bottom: -100px; */
-        right: 30px;
         transition: 2s;
        
    }
 
    #SimNao{
-        visibility: hidden;
-        transition: 5s;
-    
-        position: absolute;
-        /* right: 0px; */
-        left: 55%;
-        bottom: 30px;
-        width: 150px;
-        height: 130px;
-        align-items: center;
-        
-        border-radius: 10px;
-        overflow: hidden;
-       
+        left: 50%;
+        bottom: 70px;
+        /* background:red; */
+        max-width: 170px;
+        height: 110px;    
         padding: 5px;
-
    }
+
+    
+    .cont img{
+      
+        width: 200px;
+        left: -20px;
+    }
+
 
    #some{
        margin-left: 2px;
    }
 
+    
     #Btn{
-        width: 90%;
+        width: 40%;
         height: 25px;
         font-size: 15px;  
     }
 
     #Btn2{
-        width: 90%;
+        width: 40%;
         height: 25px;
         font-size: 15px;
-        margin-top: 7px;
+        margin-top: 0px;
     }
 
     #guia{
         margin: 10px;
     }
+
+
+        
+    #star1, #star2, #star3, #erro1, #erro2, #erro3{
+        font-size: 40px;
+        bottom: -20%;
+    }
+}
+
+
+
+@media screen and (max-width: 400px){
+
+    .card{
+        height: 65%;
+    }
+
+    #some{
+        font-size: 10px;
+    }
+
+    #SimNao{
+        left: 45%;
+        bottom: 100px;
+        /* background:red; */
+        font-size: 10px;
+        max-width: none;
+        width: auto;
+        height: 110px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+   }
+
+   #content{
+      padding: 20px;
+      font-size: 16px;
+
+   }
+
+   
+    .cont img{
+        width: 170px;
+        left: -20px;
+      
+    }
+
+    #star1, #star2, #star3, #erro1, #erro2, #erro3{
+        font-size: 30px;
+        bottom: -20%;
+    }
+
+        
+    #star1, #erro1{
+        left: 50%;
+        transform: translateX(-50%) rotate(-210deg);
+    }
+
+        
+    #star2, #erro2{
+        left: 20%;
+        transform: translateX(-50%) rotate(-50deg);
+    }
+
+    #star3, #erro3{
+        left: 80%;
+        transform: translateX(-50%) rotate(-50deg);
+    }
+
 }
