@@ -19,8 +19,8 @@ function Msg(){
     img.src = "https://i.imgur.com/32khiLD.png"
     //plaquetalendo
 
-    // var N = 10 *(Math.random(20)).toString(10)
-    var N = (Math.random() * (14 - 0) + 0)
+    // var N = 10 *(Math.random(22)).toString(10)
+    var N = (Math.random() * (22 - 0) + 0)
     var N2 = parseInt(N)
     // alert(N2)
 
@@ -66,11 +66,32 @@ function Msg(){
         ct.innerHTML = '"Se tentarem te vender óculos sem lentes, não compre! É armação."'
 
     if (N2 == 13)
-        ct.innerHTML = '"O casamento é A razão de qualquer divórcio"'
+        ct.innerHTML = '"O casamento é a principal razão de qualquer divórcio"'
 
     if (N2 == 14)
         ct.innerHTML = '"Os primeiros 7 dias da semana são sempre os mais difíceis"'
-    
+
+    if (N2 == 15)
+        ct.innerHTML = '"Odeio gente que não termina de falar a frase, parece que"'
+
+    if (N2 == 16)
+        ct.innerHTML = '"Atualmente os psiquiatras têm cobrado preços de doidos"'
+
+    if (N2 == 17)
+        ct.innerHTML = '"Se o trabalho duro da frutos, então deixem as árvores trabalharem"'
+
+     if (N2 == 18)
+        ct.innerHTML = '"Se o trabalho duro da frutos, então deixem as árvores trabalharem"'
+
+    if (N2 == 19)
+        ct.innerHTML = '"Já percebeu que todo mundo faz aniversário no mesmo ano"'
+
+    if (N2 == 20)
+        ct.innerHTML = '"Já pensou se chovesse macarrão? Seria massa"'
+
+    if (N2 == 21)
+        ct.innerHTML = '"Não leve a vida tão a sério, você não vai sair vivo dela"'
+
 
     document.body.style.transition = "ease 2s"
     //document.body.style.background = '#bb974d'
