@@ -20,7 +20,7 @@ function Msg(){
     //plaquetalendo
 
     // var N = 10 *(Math.random(22)).toString(10)
-    var N = (Math.random() * (22 - 0) + 0)
+    var N = (Math.random() * (23 - 0) + 0)
     var N2 = parseInt(N)
     // alert(N2)
 
@@ -91,6 +91,9 @@ function Msg(){
 
     if (N2 == 21)
         ct.innerHTML = '"Não leve a vida tão a sério, você não vai sair vivo dela"'
+
+    if (N2 == 22)
+        ct.innerHTML = '"Por que a bota a gente se calça e a calça se bota?"'
 
 
     document.body.style.transition = "ease 2s"
