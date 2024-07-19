@@ -1,3 +1,31 @@
+const frs = [
+    '"Se seu dia estiver ruim, lembre-se que todo dia é aniversário de alguém."', 
+    '"Viva todo dia como se fosse o último, algum dia você acerta!"',
+    '"Quando eu tiver um mano, ele vai se chamar Herrar. Porque Herrar é o mano!"',
+    '"Não derrube um lápis no chão, ele pode ficar desapontado :("',
+    '"Por que tudo junto é separado e separado é tudo junto?"',
+    '"Nunca desista dos seus sonhos. Se não encontrar numa padaria, procure na próxima."',
+    '"Algumas pessoas são iguais nuvens, a gente olha e vê um animal."',
+    '"A vida nunca vai te derrubar se você não se levantar"',
+    '"Cansado de estar cansado porque estar cansado é cansativo."',
+    '"Se a vida fosse fácil bebê não nascia chorando."',
+    '"O ruim não é o trabalho, o ruim é ter que ir trabalhar"',
+    '"Quem disse que educação não enriquece? é só olhar para as escolas particulares"',
+    '"Se tentarem te vender óculos sem lentes, não compre! É armação."',
+    '"O casamento é a razão de qualquer divórcio"',
+    '"Os primeiros 7 dias da semana são sempre os mais difíceis"',
+    '"Odeio gente que não termina a frase, parece que..."',
+    '"Se o trabalho duro dá frutos, então deixem as árvores trabalharem"',
+    '"Atualmente os psiquiatras têm cobrado preços de doidos"',
+    '"Já percebeu que todo mundo faz aniversário no mesmo ano?"',
+    '"Já pensou se chovesse macarrão? Seria massa"',
+    '"Não leve a vida tão a sério, você não vai sair vivo dela"',
+    '"Por que a calça a gente bota e a bota a gente calça?"'
+
+]
+
+var texttop = document.getElementById('texto');
+
 function Msg(){
     var sai = document.getElementById('some')
     sai.innerHTML = 'Você gostou da mensagem?'
@@ -5,95 +33,27 @@ function Msg(){
     sai.style.color = "#525453"
 
 
-    var txt = document.getElementById('texto');
-    txt.innerHTML = 'Dê seu feedback'
+    
+    texttop.innerHTML = 'Dê seu feedback'
 
     
     var cont = document.getElementById('content')
     cont.style.position = "absolute"
-    //cont.style.right = "20px"
-    //cont.style.bottom = "58%"
     cont.style.bottom = "50%"
 
     var img = document.querySelector('img')
     img.src = "https://i.imgur.com/32khiLD.png"
     //plaquetalendo
 
-    // var N = 10 *(Math.random(22)).toString(10)
-    var N = (Math.random() * (23 - 0) + 0)
+    // var N = 10 *(Math.random(20)).toString(10)
+    var N = (Math.random() * (frs.length - 0) + 0)
     var N2 = parseInt(N)
-    // alert(N2)
 
     var ct = document.getElementById('content')
-
-    if (N2 == 0)
-        ct.innerHTML = '"Se seu dia estiver ruim, lembre-se que todo dia é aniversário de alguém."'
     
-    if (N2 == 1)
-        ct.innerHTML = '"Viva todo dia como se fosse o último, algum dia você acerta!"'
-    
-    if (N2 == 2)
-        ct.innerHTML = '"Quando eu tiver um mano, ele vai se chamar Herrar. Porque Herrar é o mano!"'
 
-    if (N2 == 3)
-        ct.innerHTML = '"Não derrube um lápis no chão, ele pode ficar desapontado :("'
+    ct.innerHTML = frs[N2];
 
-    if (N2 == 4)
-        ct.innerHTML = '"Por que tudo junto é separado e separado é tudo junto?"'
-
-    if (N2 == 5)
-        ct.innerHTML = '"Nunca desista dos seus sonhos. Se não encontrar numa padaria, procure na próxima."'
-
-    if (N2 == 6)
-        ct.innerHTML = '"Algumas pessoas são iguais nuvens, a gente olha e vê um animal."'
-
-    if (N2 == 7)
-        ct.innerHTML = '"A vida nunca vai te derrubar se você não se levantar"'
-
-    if (N2 == 8)
-        ct.innerHTML = '"Cansado de estar cansado porque estar cansado é cansativo."'
-
-    if (N2 == 9)
-        ct.innerHTML = '"Se a vida fosse fácil bebê não nascia chorando."'
-
-    if (N2 == 10)
-        ct.innerHTML = '"O ruim não é o trabalho, o ruim é ter que ir trabalhar"'
-
-    if (N2 == 11)
-        ct.innerHTML = '"Quem disse que educação não enriquece? é só olhar para as escolas particulares"'
-
-    if (N2 == 12)
-        ct.innerHTML = '"Se tentarem te vender óculos sem lentes, não compre! É armação."'
-
-    if (N2 == 13)
-        ct.innerHTML = '"O casamento é a principal razão de qualquer divórcio"'
-
-    if (N2 == 14)
-        ct.innerHTML = '"Os primeiros 7 dias da semana são sempre os mais difíceis"'
-
-    if (N2 == 15)
-        ct.innerHTML = '"Odeio gente que não termina de falar a frase, parece que"'
-
-    if (N2 == 16)
-        ct.innerHTML = '"Atualmente os psiquiatras têm cobrado preços de doidos"'
-
-    if (N2 == 17)
-        ct.innerHTML = '"Se o trabalho duro da frutos, então deixem as árvores trabalharem"'
-
-     if (N2 == 18)
-        ct.innerHTML = '"Se o trabalho duro da frutos, então deixem as árvores trabalharem"'
-
-    if (N2 == 19)
-        ct.innerHTML = '"Já percebeu que todo mundo faz aniversário no mesmo ano"'
-
-    if (N2 == 20)
-        ct.innerHTML = '"Já pensou se chovesse macarrão? Seria massa"'
-
-    if (N2 == 21)
-        ct.innerHTML = '"Não leve a vida tão a sério, você não vai sair vivo dela"'
-
-    if (N2 == 22)
-        ct.innerHTML = '"Por que a bota a gente se calça e a calça se bota?"'
 
 
     document.body.style.transition = "ease 2s"
@@ -108,11 +68,10 @@ function Msg(){
 
     var Yep = document.getElementById('Btn2')
     Yep.style.visibility = "visible"
-    //Yep.style.background = "#bb974d"
-    //Yep.style.background = "#ECCB79"
 
     var env = document.getElementById('Btn3')
     env.style.animation = "none"
+
 
 
 
@@ -141,14 +100,13 @@ function Msg2(){
     var esconde = document.getElementById('SimNao')
     esconde.style.visibility = "visible"
 
-    var txt = document.getElementById('texto');
-    txt.innerHTML = 'Ela ficou triste...'
+   
+    texttop.innerHTML = 'Ela ficou triste...'
 
     var Not = document.getElementById('Btn')
     Not.style.visibility = "hidden"
 
     var Yep = document.getElementById('Btn2')
-    //Yep.style.background = "#585858"
 
 
     var sai = document.getElementById('some')
@@ -165,9 +123,6 @@ function Msg2(){
     document.body.style.transition = "ease 2s"
     document.body.style.background = '#585858'
 
-    // var bdd = document.getElementById('cd')
-    // bdd.style.background = '#f1f1f1'
-
     var env = document.getElementById('Btn3')
     env.style.animation = "balan 1s infinite ease-in 10s"
 
@@ -176,7 +131,6 @@ function Msg2(){
     boun.style.animation = "none"
 
     var err = document.getElementById('erro1')
-    // st.style.bottom = "35%";
     err.style.animation = "fisrtStar 2s 1 ease-out "
 
     var err2 = document.getElementById('erro2')
@@ -195,8 +149,8 @@ function Msg3(){
     var esconde = document.getElementById('SimNao')
     esconde.style.visibility = "hidden"
 
-    var txt = document.getElementById('texto');
-    txt.innerHTML = 'Ela ficou brava!!'
+   
+    texttop.innerHTML = 'Ela ficou brava!!'
 
     var sai = document.getElementById('some')
     sai.style.color = "#bcdde6"
@@ -230,8 +184,8 @@ function Msg4(){
     var Yep = document.getElementById('Btn2')
     Yep.style.visibility = "hidden"
 
-    var txt = document.getElementById('texto');
-    txt.innerHTML = 'Ela ficou Feliz!'
+
+    texttop.innerHTML = 'Ela ficou Feliz!'
 
     var sai = document.getElementById('some')
     sai.innerHTML = 'Uau! você gostou da mensagem.'
@@ -245,24 +199,18 @@ function Msg4(){
     //plaquetaFeliz 
 
     document.body.style.transition = "ease 2s"
-    //document.body.style.background = '#62d685'
     document.body.style.background = 'green'
 
-    if (document.body.style.background = '#62d685'){
-        // document.body.style.background = '#bb974d'
-    }
+   
 
     var env = document.getElementById('Btn3')
     env.style.animation = "balan 1s infinite ease-in 10s"
 
     var st = document.getElementById('star1')
-    // st.style.bottom = "35%";
     st.style.animation = "fisrtStar 2s 1 ease-out "
 
     var st2 = document.getElementById('star2')
-   
     st2.style.animation = "SecondStar 2s 1 ease-out .3s"
-
 
     var st3 = document.getElementById('star3')
     st3.style.animation = "ThirdStar 2s 1 ease-out .2s"
@@ -271,35 +219,23 @@ function Msg4(){
 
 }
 
+
 var gu = document.getElementById('guia')
 
 
 function Ajuda(){
 
     gu.style.visibility = "visible"
-
-    gu.style.position = "absolute"
     gu.style.marginTop = "650px"
-
-    //gu.style.marginBottom = "-650px"
-
-    //gu.style.marginTop = "150%"
-
-    //gu.style.marginBottom = "30px"
-
-    
-
+    gu.style.position = "absolute"
     document.getElementById("Btn3").style.display = "none"
 
    
 }
 
 function fechar(){
-   
     gu.style.transition ="ease-out 2s"
-   
     gu.style.marginTop = "-500px"
-
     document.getElementById("Btn3").style.display = "flex"
     
 }
