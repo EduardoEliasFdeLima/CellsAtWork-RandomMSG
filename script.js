@@ -20,8 +20,8 @@ const frs = [
     '"Já percebeu que todo mundo faz aniversário no mesmo ano?"',
     '"Já pensou se chovesse macarrão? Seria massa"',
     '"Não leve a vida tão a sério, você não vai sair vivo dela"',
-    '"Por que a calça a gente bota e a bota a gente calça?"'
-
+    '"Por que a calça a gente bota e a bota a gente calça?"',
+    '"É raro, mas acontece muito"'
 ]
 
 var texttop = document.getElementById('texto');
@@ -32,10 +32,7 @@ function Msg(){
     sai.style.fontSize = "16px"
     sai.style.color = "#525453"
 
-
-    
     texttop.innerHTML = 'Dê seu feedback'
-
     
     var cont = document.getElementById('content')
     cont.style.position = "absolute"
@@ -51,10 +48,7 @@ function Msg(){
 
     var ct = document.getElementById('content')
     
-
     ct.innerHTML = frs[N2];
-
-
 
     document.body.style.transition = "ease 2s"
     //document.body.style.background = '#bb974d'
@@ -71,7 +65,6 @@ function Msg(){
 
     var env = document.getElementById('Btn3')
     env.style.animation = "none"
-
 
 
 
@@ -99,7 +92,6 @@ function Msg2(){
     //Botão não
     var esconde = document.getElementById('SimNao')
     esconde.style.visibility = "visible"
-
    
     texttop.innerHTML = 'Ela ficou triste...'
 
@@ -107,7 +99,6 @@ function Msg2(){
     Not.style.visibility = "hidden"
 
     var Yep = document.getElementById('Btn2')
-
 
     var sai = document.getElementById('some')
     sai.innerHTML = 'Ok! você não gostou da mensagem.'
@@ -134,9 +125,8 @@ function Msg2(){
     err.style.animation = "fisrtStar 2s 1 ease-out "
 
     var err2 = document.getElementById('erro2')
-   
-    err2.style.animation = "SecondStar 2s 1 ease-out .3s"
 
+    err2.style.animation = "SecondStar 2s 1 ease-out .3s"
 
     var err3 = document.getElementById('erro3')
     err3.style.animation = "ThirdStar 2s 1 ease-out .2s"
@@ -149,7 +139,6 @@ function Msg3(){
     var esconde = document.getElementById('SimNao')
     esconde.style.visibility = "hidden"
 
-   
     texttop.innerHTML = 'Ela ficou brava!!'
 
     var sai = document.getElementById('some')
@@ -199,9 +188,7 @@ function Msg4(){
     //plaquetaFeliz 
 
     document.body.style.transition = "ease 2s"
-    document.body.style.background = 'green'
-
-   
+    document.body.style.background = '#62d685'
 
     var env = document.getElementById('Btn3')
     env.style.animation = "balan 1s infinite ease-in 10s"
@@ -215,22 +202,15 @@ function Msg4(){
     var st3 = document.getElementById('star3')
     st3.style.animation = "ThirdStar 2s 1 ease-out .2s"
 
-
-
 }
-
 
 var gu = document.getElementById('guia')
 
-
 function Ajuda(){
-
     gu.style.visibility = "visible"
     gu.style.marginTop = "650px"
     gu.style.position = "absolute"
-    document.getElementById("Btn3").style.display = "none"
-
-   
+    document.getElementById("Btn3").style.display = "none"  
 }
 
 function fechar(){
