@@ -19,9 +19,13 @@ const frs = [
     '"Atualmente os psiquiatras têm cobrado preços de doidos"',
     '"Já percebeu que todo mundo faz aniversário no mesmo ano?"',
     '"Já pensou se chovesse macarrão? Seria massa"',
-    '"Não leve a vida tão a sério, você não vai sair vivo dela"',
+    '"Não leve a vida tão a sério, você não vai sair vivo dela."',
     '"Por que a calça a gente bota e a bota a gente calça?"',
-    '"É raro, mas acontece muito"'
+    '"É raro, mas acontece muito!"',
+    '"Não empilhe livros à toa, eles podem se sentir pressionados."',
+    '"Não ignore o despertador, ele só quer te ajudar a levantar."',
+    '"Cuidado ao quebrar um relógio, ele pode perder a hora."',
+    '"Cuidado com o ventilador, ele pode acabar virando as costas para você."'
 ]
 
 var texttop = document.getElementById('texto');
