@@ -25,7 +25,8 @@ const frs = [
     '"Não empilhe livros à toa, eles podem se sentir pressionados."',
     '"Não ignore o despertador, ele só quer te ajudar a levantar."',
     '"Cuidado ao quebrar um relógio, ele pode perder a hora."',
-    '"Cuidado com o ventilador, ele pode acabar virando as costas para você."'
+    '"Cuidado com o ventilador, ele pode acabar virando as costas para você."',
+    '"O veneno quando passa da validade, perde o efeito ou fica mais forte?"'
 ]
 
 var texttop = document.getElementById('texto');
