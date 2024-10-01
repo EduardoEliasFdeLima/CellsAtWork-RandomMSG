@@ -27,7 +27,7 @@ const frs = [
     '"Cuidado ao quebrar um relógio, ele pode perder a hora."',
     '"Cuidado com o ventilador, ele pode acabar virando as costas para você."',
     '"O veneno quando passa da validade, perde o efeito ou fica mais forte?"',
-    '"Um bom mentiroso é aquele que acredita na própria mentira"
+    '"Um bom mentiroso é aquele que acredita na própria mentira"'
 ]
 
 var texttop = document.getElementById('texto');
