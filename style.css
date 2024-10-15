@@ -406,6 +406,9 @@ body ::selection{
         left: -20px;
     }
 
+    .cont img:hover{
+        width: 205px;
+    }
 
    #some{
        margin-left: 2px;
@@ -471,6 +474,10 @@ body ::selection{
     .cont img{
         width: 170px;
         left: -20px;  
+    }
+
+    .cont img{
+        width: 175px;
     }
 
     #star1, #star2, #star3, #bomb1, #bomb2, #bomb3{
