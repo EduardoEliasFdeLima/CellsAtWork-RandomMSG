@@ -30,7 +30,9 @@ const frs = [
     '"O veneno quando passa da validade, perde o efeito ou fica mais forte?"',
     '"Um bom mentiroso é aquele que acredita na própria mentira"',
     '"Eu não mando indireta, igual certas pessoas por aí.."',
-    '"Namoro é coisa séria, mas como sou engraçado estou solteiro"'
+    '"Namoro é coisa séria, mas como sou engraçado estou solteiro"',
+    '"Tubarão que dorme a onda leva"',
+    '"Cachorro que ladra não morde"'
 ]
 
 //muda a imagem com a url mandada pra função
