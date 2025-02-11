@@ -32,7 +32,8 @@ const frs = [
     '"Eu não mando indireta, igual certas pessoas por aí.."',
     '"Namoro é coisa séria, mas como sou engraçado estou solteiro"',
     '"Tubarão que dorme a onda leva"',
-    '"Cachorro que ladra não morde"'
+    '"Cachorro que ladra não morde"',
+    '"Se o vinho é líquido, porque existe vinho seco?"
 ]
 
 //muda a imagem com a url mandada pra função
